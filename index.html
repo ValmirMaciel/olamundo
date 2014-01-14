@@ -3,13 +3,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Documento sem título</title>
+<script type="text/javascript">
+// definição de variavel global
+var valida_g = 0;
+
+function busca_online() {
+	ret = busca(2);
+	alert(ret);
+	
+	alert(valida_g);	
+}
+
+</script>
 <script type="text/javascript" src="http://livrarialapisdecor.com.br/testes/olamundo/busca.js"></script>
 </head>
 <body>
 
 <div>
     <form>
-      <input type="button" value="ola mundo" onclick="alert(busca(1));">
+    
+      <input type="button" value="ola mundo" onclick="busca_online();">
     </form>
 </div>
 
